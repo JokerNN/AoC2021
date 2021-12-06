@@ -15,3 +15,4 @@ with open('inputs/1.txt') as file:
             c2 += 1
         cur_sum = nsum
     print(f'Ans 2: {c2}')
+    
