@@ -23,7 +23,13 @@ def arithmetic_sum(n):
     return int(s)
 
 
-mean = round(statistics.mean(input))
+mean = math.floor(statistics.mean(input))
+s = 0
+for crab in input:
+    s += arithmetic_sum(abs(mean - crab))
+
+print(f'Optimized answer 2: {s}')
+
 max_crab = max(input)
 
 ms = float('inf')
