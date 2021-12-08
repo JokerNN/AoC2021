@@ -1,6 +1,6 @@
+import re
 input = []
 
-import re
 
 with open('inputs/4.txt') as input_file:
     input = input_file.read().strip().split('\n\n')
@@ -11,12 +11,12 @@ nums = [int(num) for num in input[0].split(',')]
 del input[0]
 
 
-
 def mark_num(board, num):
     for row in board:
         for cell in row:
             if cell[0] == num:
                 cell[1] = True
+
 
 def check_board_for_win(board):
     for row in board:
@@ -25,6 +25,7 @@ def check_board_for_win(board):
     for idx in range(len(board[0])):
         if all(row[idx][1] for row in board):
             return True
+
 
 def calc_winning_score(board):
     s = 0
@@ -35,11 +36,13 @@ def calc_winning_score(board):
 
     return s
 
+
 boards = []
 for board_str in input:
     board = []
     for row in board_str.split('\n'):
-        board.append([[int(num), False] for num in re.split(r' +', row.strip())])
+        board.append([[int(num), False]
+                     for num in re.split(r' +', row.strip())])
 
     boards.append(board)
 
@@ -56,12 +59,12 @@ for num in nums:
             break
 
 
-
 boards = []
 for board_str in input:
     board = []
     for row in board_str.split('\n'):
-        board.append([[int(num), False] for num in re.split(r' +', row.strip())])
+        board.append([[int(num), False]
+                     for num in re.split(r' +', row.strip())])
 
     boards.append(board)
 

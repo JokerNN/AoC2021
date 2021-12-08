@@ -14,8 +14,8 @@ with open('inputs/2.txt') as input_file:
 
     print(f'Answer 1: {x * y}')
 
-    aim, depth  = 0, 0
-    x, y = 0, 0 
+    aim, depth = 0, 0
+    x, y = 0, 0
 
     for command in commands:
         direction, increment = command.split(' ')

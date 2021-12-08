@@ -6,7 +6,7 @@ input = get_input_lines('3.txt')
 least_commons, most_commons = [], []
 
 for idx in range(len(input[0])):
-    ones_count, zeroes_count = 0, 0 
+    ones_count, zeroes_count = 0, 0
     for num in input:
         if num[idx] == '1':
             ones_count += 1
@@ -63,6 +63,3 @@ while len(lc_filter) > 1:
 lc = int(lc_filter[0], 2)
 mc = int(mc_filter[0], 2)
 print(f'Answer 2: {lc * mc}')
-
-
-        
