@@ -1,7 +1,5 @@
-from utils import get_input_lines
-from collections import namedtuple, defaultdict
-
-Point = namedtuple('Point', ['x', 'y'], defaults=(0, 0))
+from utils import get_input_lines, Point
+from collections import  defaultdict
 
 input = get_input_lines('5.txt')
 

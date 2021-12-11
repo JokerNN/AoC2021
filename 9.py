@@ -1,8 +1,6 @@
 from typing import List, NamedTuple, Set
 from collections import namedtuple
-from utils import get_input_lines
-
-Point = namedtuple('Point', ['x', 'y'], defaults=[0, 0])
+from utils import get_input_lines, Point
 
 inp = get_input_lines('9.txt')
 map = [list(line) for line in inp]
