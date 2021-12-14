@@ -62,7 +62,7 @@ for fold in folds[1:]:
 blx = max(paper.keys(), key=lambda p: p.x)
 bly = max(paper.keys(), key=lambda p: p.y)
 
-screen = [['.'] * (blx.x + 1) for _ in range(bly.y + 1)]
+screen = [[' '] * (blx.x + 1) for _ in range(bly.y + 1)]
 
 for point, val in paper.items():
     if val:
